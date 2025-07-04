@@ -1,221 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Creative Pathways</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  </head>
-  <body>
-    <button class="sidebar-toggle" aria-label="Open menu">
-      <i class="fas fa-bars"></i>
-    </button>
-    <aside class="sidebar">
-      <button class="sidebar-close" aria-label="Close menu">&times;</button>
-      <div class="logo">🌈 Creative Pathways</div>
-      <nav class="nav">
-        <a href="#" class="active">Home</a>
-        <a href="curriculum/art.html">Art</a>
-        <a href="curriculum/drama-and-puppetry.html">Drama & Puppetry</a>
-        <a href="references.html">References</a>
-      </nav>
-    </aside>
-    <div class="sidebar-overlay"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creativity ECE | Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Top Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 mb-4">
+    <div class="container">
+      <a class="navbar-brand" href="#">Creativity ECE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="curriculum/art.html">Art</a></li>
+          <li class="nav-item"><a class="nav-link" href="curriculum/drama-and-puppetry.html">Drama & Puppetry</a></li>
+          <li class="nav-item"><a class="nav-link" href="references.html">References</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- HERO / INTRO -->
-    <section class="hero" style="padding-bottom:2rem;">
-      <h1>✨ Creativity in the Curriculum</h1>
-      <p style="font-size:1.3rem; color:var(--accent); max-width:600px; margin:0 auto 1.2em;">
-        Nurturing curiosity, courage, and imagination in every child.
-      </p>
-      <img src="img/creativity-matters.jpg" alt="Children exploring creatively" style="max-width:340px; margin-bottom:1em;">
-      <figcaption style="color:var(--text-secondary); font-size:0.98em; margin-bottom:1.2em;">Children collaborating on a creative project</figcaption>
-      <a href="#explore" class="btn-main">Discover More</a>
+  <!-- Hero Section -->
+  <header class="container mb-5 text-center">
+    <img src="img/curriculum_creativity.jpeg" alt="Creativity in ECE" class="img-fluid rounded shadow mb-4" style="max-height:320px; object-fit:cover;">
+    <h1 class="display-5 fw-bold" style="color:#6c63ff;">Creativity in Early Childhood Education</h1>
+    <p class="lead">Nurturing imagination, innovation, and lifelong learning from the very start.</p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mb-5">
+    <section class="mb-5 p-4 rounded shadow-sm" style="background:#f8f9fa;">
+      <h2 class="mb-3" style="color:#6c63ff; font-weight:700;">Introduction and Significance of Creativity</h2>
+      <p>Creativity forms the cornerstone of early childhood education, opening young minds to innovate and discover. In a world where adaptability is the need, creative pedagogy in the curriculum equips children with self-expression and problem-solving. Lin (2011) proposes a framework for creative pedagogy, underlining its importance to develop imagination between 0-8 years. It transforms learning into an active process, where children develop and thrive from play and exploration. For educators, making creativity a part of their teaching is not optional—it's necessary to prepare children for the challenge ahead, so it's addressed across all domains of the curriculum.</p>
     </section>
-
-    <!-- WHY CREATIVITY MATTERS -->
-    <section class="main-content" style="margin-bottom:0.5rem;">
-      <div class="card" style="grid-column: 1 / -1;">
-        <h2>Why Creativity Matters</h2>
-        <blockquote style="font-style:italic; color:var(--primary); border-left:4px solid var(--primary); padding-left:1em; margin-bottom:1em;">
-          “Creativity is not a standalone concept but a fundamental part of holistic learning.”<br>
-          <span style="font-size:0.95em; color:var(--text-secondary);">— Lilian, Mokwunye & Anyanwu (2023)</span>
-        </blockquote>
-        <div style="display:flex; flex-wrap:wrap; gap:1.2em; align-items:center;">
-          <div style="flex:2; min-width:220px;">
-            <p>
-              Creativity in early childhood is more than artistic expression—it’s the foundation for curiosity, emotional growth, and flexible thinking. Children are born creators, using play, questions, and experimentation to make sense of their world. When we nurture this drive, we empower children to approach challenges with confidence and imagination.
-            </p>
-            <p>
-              Encouraging creativity helps children develop resilience, communication skills, and the ability to see multiple solutions to a problem. These skills are essential for lifelong learning and adaptability in a rapidly changing world.
-            </p>
-          </div>
-          <div style="flex:1; min-width:160px; text-align:center;">
-            <img src="img/creative-play.png" alt="Creative play" style="width:100%; max-width:160px; border-radius:8px; margin-bottom:0.5em;">
-            <figcaption style="color:var(--text-secondary); font-size:0.93em;">Imaginative play sparks new ideas</figcaption>
-          </div>
+    <section class="mb-5 p-4 rounded shadow-sm" style="background:#fff3cd;">
+      <h2 class="mb-3" style="color:#f8b500; font-weight:700;">Creativity Theories and Perspectives</h2>
+      <p>Theories of creativity, like Vygotsky's social constructivism, highlight the importance of guidance during the early years. Lin's (2011) model supports this, suggesting that teachers scaffold children's thoughts to promote originality. Views are different—some opine that creativity is a natural ability, and others consider it to be a capacity gained by experience. Zhang et al. (2023) found that a sense of belonging and friendship among peers nurtures classroom creativity, particularly in young children. This theory setting integration highlights the significance of personalized strategies so that every child, from a baby to 8-year-olds, has opportunities to grow creatively.</p>
+    </section>
+    <section class="mb-5 p-4 rounded shadow-sm" style="background:#f8f9fa;">
+      <h2 class="mb-3" style="color:#6c63ff; font-weight:700;">Resources, Materials, and Digital Technologies</h2>
+      <p>Effective teaching relies on different resources. For preschoolers, papers, crayons, and clay encourage imagination, while electronic materials like tablets engage interactive learning. Sensory bins with safe textures offer 0-2-year-olds stimulation. Large drawing boards are appropriate for 2-3-year-olds, while storytelling software is appealing to 3-5-year-olds. Between the ages of 6-8, coding games become helpful to encourage creative thinking. Electronic devices like interactive whiteboards, project display, but done in moderation to avoid excessive use of the screen. Teachers must select proper materials for the age and provide accessibility and safety to ensure maximum participation throughout the curriculum.</p>
+    </section>
+    <section class="mb-5 p-4 rounded shadow-sm" style="background:#fff3cd;">
+      <h2 class="mb-3" style="color:#f8b500; font-weight:700;">Learning Experiences/Opportunities</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="list-group list-group-flush mb-4">
+            <li class="list-group-item bg-transparent">0-2 Years: Finger painting with edible paint enhances sensory skill (Lin, 2011).</li>
+            <li class="list-group-item bg-transparent">0-2 Years: Soft instrument music play enhances rhythm (Zhang et al., 2023).</li>
+            <li class="list-group-item bg-transparent">2-3 Years: Collage making with fabric scraps enhances imagination (Lin, 2011).</li>
+            <li class="list-group-item bg-transparent">2-3 Years: Building with basic blocks enhances structure (Zhang et al., 2023).</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-group list-group-flush mb-4">
+            <li class="list-group-item bg-transparent">3-5 Years: Prop construction for storytelling enhances narratives (Lin, 2011).</li>
+            <li class="list-group-item bg-transparent">3-5 Years: Digital drawing on a tablet enhances images (Zhang et al., 2023).</li>
+            <li class="list-group-item bg-transparent">6-8 Years: Collaborative mural painting enhances teamwork (Lin, 2011).</li>
+            <li class="list-group-item bg-transparent">6-8 Years: Elementary game coding fosters problem-solving (Zhang et al., 2023).</li>
+          </ul>
         </div>
       </div>
+      <p class="mt-3">These exercises, based on sound research, show how teachers can promote creativity at different age levels, tailoring exercises to developmental needs.</p>
     </section>
+  </main>
 
-    <!-- CREATIVITY ACROSS THE CURRICULUM -->
-    <section class="main-content" style="margin-bottom:0.5rem;">
-      <div class="card">
-        <h2>Creativity Across the Curriculum</h2>
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1em;">
-          <div>
-            <p>
-              Creativity isn’t limited to art or dramatic play. It belongs in every subject—literacy, numeracy, science, and the humanities. When children are encouraged to think imaginatively across disciplines, they build deeper connections and construct knowledge that is meaningful to them.
-            </p>
-            <p>
-              For example, a child building a bridge from blocks is not only engineering but also storytelling, problem-solving, and collaborating with peers. These experiences foster both academic and social-emotional growth.
-            </p>
-          </div>
-          <div style="text-align:center;">
-            <img src="img/curriculum_creativity.jpeg" alt="Creative curriculum" style="width:100%; max-width:180px; border-radius:8px; margin-bottom:0.5em;">
-            <figcaption style="color:var(--text-secondary); font-size:0.93em;">Creativity connects all learning areas</figcaption>
-            <p style="margin-top:0.7em;">
-              <strong>Research spotlight:</strong> Yildirim & Yilmaz (2023) show that cross-disciplinary creativity strengthens children’s capacity for innovation and adaptive thinking, preparing them for a changing world.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <footer class="text-center py-4 bg-light border-top">
+    <small>&copy; 2024 Creativity ECE. All rights reserved.</small>
+  </footer>
 
-    <!-- THE EDUCATOR'S ROLE -->
-    <section class="main-content" style="margin-bottom:0.5rem;">
-      <div class="card">
-        <h2>The Educator’s Role</h2>
-        <div style="display:flex; align-items:center; gap:1em;">
-          <div style="flex:2;">
-            <p>
-              In a creativity-rich classroom, educators act as facilitators—offering space for exploration and responding to children’s emerging interests. The best environments are emotionally safe, visually stimulating, and filled with diverse resources. Teachers balance freedom and guidance, encouraging children to take risks, express ideas, and revisit their work with a playful mindset.
-            </p>
-            <p>
-              As Lilian et al. (2023) note, educators must encourage children to take risks, express their ideas, and revisit their work with a critical but playful mindset. This approach helps children develop confidence and a love of learning.
-            </p>
-          </div>
-          <div style="flex:1; text-align:center;">
-            <img src="img/educator_facilitator.png" alt="Educator facilitating creativity" style="width:100%; max-width:120px; border-radius:8px; margin-bottom:0.5em;">
-            <figcaption style="color:var(--text-secondary); font-size:0.93em;">Educators inspire creative thinking</figcaption>
-            <i class="fas fa-lightbulb" style="font-size:2em; color:var(--accent); margin-top:0.5em;"></i>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- INCLUSION & CULTURAL CONNECTIONS -->
-    <section class="main-content" style="margin-bottom:0.5rem;">
-      <div class="card" style="background:rgba(251,146,60,0.08); border-left:4px solid var(--accent);">
-        <h2>Inclusion & Cultural Connections</h2>
-        <p>
-          Creative curricula celebrate diversity. When children explore materials, languages, and stories from many cultures, they develop a strong sense of identity and belonging. Creative learning makes space for all kinds of learners—especially those who shine when using their imagination.
-        </p>
-        <p>
-          By embracing cultural responsiveness, educators help children see themselves and others reflected in the curriculum, fostering empathy and respect for differences.
-        </p>
-      </div>
-    </section>
-
-    <!-- EXPLORE THE SITE -->
-    <section id="explore" class="main-content">
-      <div class="card" style="grid-column: 1 / -1;">
-        <h2>Explore Creative Learning</h2>
-        <p>
-          This site shows how creativity can be embedded across early childhood learning. In <strong>Part A</strong>, dive into:
-        </p>
-        <div class="curriculum-links">
-          <a class="curriculum-link" href="curriculum/art.html">
-            <span class="icon"><i class="fas fa-paint-brush"></i></span>
-            Art: Imagination & Expression
-          </a>
-          <a class="curriculum-link" href="curriculum/drama-and-puppetry.html">
-            <span class="icon"><i class="fas fa-theater-masks"></i></span>
-            Drama & Puppetry: Storytelling in Action
-          </a>
-        </div>
-        <p style="margin-top:1.2em;">
-          Each area includes key theories, digital tools, and hands-on experiences for children aged 0–8. Through creative teaching, we are not only helping children express themselves—we are preparing them to shape the future with empathy, originality, and courage.
-        </p>
-        <p style="color:var(--primary); font-weight:600; margin-top:1em;">
-          Creativity belongs to every child—let’s keep that spark alive!
-        </p>
-      </div>
-    </section>
-
-    <nav class="bottom-nav">
-      <a href="curriculum/art.html">Art</a>
-      <a href="curriculum/drama-and-puppetry.html">Drama & Puppetry</a>
-      <a href="references.html">References</a>
-    </nav>
-    <script>
-    // Smart sidebar toggle for mobile/tablet
-    const sidebar = document.querySelector('.sidebar');
-    const toggleBtn = document.querySelector('.sidebar-toggle');
-    const closeBtn = document.querySelector('.sidebar-close');
-    const overlay = document.querySelector('.sidebar-overlay');
-    const navLinks = document.querySelectorAll('.sidebar .nav a');
-    const focusableSelectors = 'a, button, input, [tabindex]:not([tabindex="-1"])';
-    let lastFocused;
-
-    function openSidebar() {
-      sidebar.classList.add('active');
-      overlay.classList.add('active');
-      document.body.classList.add('sidebar-locked');
-      lastFocused = document.activeElement;
-      // Focus trap
-      setTimeout(() => {
-        const first = sidebar.querySelector(focusableSelectors);
-        if (first) first.focus();
-      }, 100);
-    }
-    function closeSidebar() {
-      sidebar.classList.remove('active');
-      overlay.classList.remove('active');
-      document.body.classList.remove('sidebar-locked');
-      if (lastFocused) lastFocused.focus();
-    }
-    toggleBtn.addEventListener('click', () => {
-      if (sidebar.classList.contains('active')) {
-        closeSidebar();
-      } else {
-        openSidebar();
-      }
-    });
-    closeBtn.addEventListener('click', closeSidebar);
-    overlay.addEventListener('click', closeSidebar);
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        if (window.innerWidth <= 1024) closeSidebar();
-      });
-    });
-    window.addEventListener('resize', () => {
-      if (window.innerWidth > 1024) closeSidebar();
-    });
-    document.addEventListener('keydown', (e) => {
-      if (sidebar.classList.contains('active')) {
-        if (e.key === 'Escape') closeSidebar();
-        // Focus trap
-        if (e.key === 'Tab') {
-          const focusables = sidebar.querySelectorAll(focusableSelectors);
-          if (!focusables.length) return;
-          const first = focusables[0];
-          const last = focusables[focusables.length - 1];
-          if (e.shiftKey) {
-            if (document.activeElement === first) {
-              e.preventDefault();
-              last.focus();
-            }
-          } else {
-            if (document.activeElement === last) {
-              e.preventDefault();
-              first.focus();
-            }
-          }
-        }
-      }
-    });
-    </script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

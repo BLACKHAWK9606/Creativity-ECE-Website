@@ -3,200 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Art Education & Creative Development | Creative Pathways</title>
+  <title>Art Education & Creative Development | Creativity ECE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <button class="sidebar-toggle" aria-label="Open menu">
-    <i class="fas fa-bars"></i>
-  </button>
-  <aside class="sidebar">
-    <button class="sidebar-close" aria-label="Close menu">&times;</button>
-    <div class="logo">🌈 Creative Pathways</div>
-    <nav class="nav">
-      <a href="../index.html">Home</a>
-      <a href="art.html" class="active">Art</a>
-      <a href="drama-and-puppetry.html">Drama & Puppetry</a>
-      <a href="../references.html">References</a>
-    </nav>
-  </aside>
-  <div class="sidebar-overlay"></div>
-
-  <main class="main-content" style="gap:1rem;">
-    <!-- HERO / PAGE TITLE -->
-    <section class="card" style="background:rgba(20,184,166,0.07); border-left:4px solid var(--primary); grid-column:1/-1; display:flex; flex-wrap:wrap; align-items:center; gap:1.5em;">
-      <div style="flex:2; min-width:220px;">
-        <h1 style="margin-bottom:0.5em;"><span style="font-size:1.3em;">🎨</span> Art Education and Creative Development in Early Childhood</h1>
-        <nav style="margin-bottom:0.5em;">
-          <a href="../index.html" class="btn-main" style="font-size:1em; padding:0.5em 1.2em;">&#8592; Back to Home</a>
-        </nav>
-        <p style="color:var(--text-secondary); font-size:1.1em;">
-          Art is a language for children—one that nurtures imagination, communication, and self-discovery. Explore how art unlocks creativity and confidence in the early years.
-        </p>
-      </div>
-      <div style="flex:1; min-width:180px; text-align:center;">
-        <img src="../img/art-hero.jpg" alt="Children painting together" style="width:100%; max-width:180px; border-radius:10px; margin-bottom:0.5em;">
-        <figcaption style="color:var(--text-secondary); font-size:0.95em;">Art as joyful exploration</figcaption>
-      </div>
-    </section>
-
-    <!-- IMPORTANCE OF ART -->
-    <section class="card" style="display:flex; flex-wrap:wrap; gap:1.2em; align-items:center;">
-      <div style="flex:2; min-width:220px;">
-        <h2>The Importance of Art in Early Childhood Creativity</h2>
-        <p>
-          Art education offers young children a unique platform to express their thoughts, emotions, and identities in visual form. According to Saefurrohman (2024), early art experiences nurture imagination, communication, and self-regulation—core skills for holistic development. Through painting, drawing, modelling, and crafting, children explore sensory experiences and experiment with symbols and meaning. These creative expressions foster emotional resilience and support language and social development. Art also helps children develop confidence in their ideas, as there are no “wrong” answers in open-ended creative processes. When integrated into the curriculum, art becomes a vehicle for both personal discovery and collaborative exploration.
-        </p>
-      </div>
-      <div style="flex:1; min-width:140px; text-align:center;">
-        <img src="../img/art-expression.jpg" alt="Child expressing through art" style="width:100%; max-width:120px; border-radius:8px; margin-bottom:0.5em;">
-        <figcaption style="color:var(--text-secondary); font-size:0.93em;">Every mark tells a story</figcaption>
-      </div>
-    </section>
-
-    <!-- THEORIES & PERSPECTIVES -->
-    <section class="card" style="background:rgba(251,146,60,0.07); border-left:4px solid var(--accent); display:flex; flex-wrap:wrap; gap:1.2em; align-items:center;">
-      <div style="flex:2; min-width:220px;">
-        <h2>Theories and Perspectives on Creativity in Art</h2>
-        <p>
-          Art education in early childhood is grounded in constructivist and sociocultural theories. From a constructivist lens, children actively construct knowledge through sensory-rich, hands-on art-making (Saefurrohman, 2024). Vygotsky’s sociocultural theory highlights how creativity emerges through social interactions and cultural tools—art being a primary medium of communication. The creative process is just as valuable as the outcome. As noted by the authors of <em>Art Education and Its Importance in Early Childhood</em> (2023), fostering creativity through art requires freedom of expression, exposure to diverse stimuli, and adult scaffolding. These perspectives emphasize the child’s role as an active meaning-maker in their artistic explorations.
-        </p>
-      </div>
-      <div style="flex:1; min-width:140px; text-align:center;">
-        <img src="../img/art-theory.jpg" alt="Art theory in practice" style="width:100%; max-width:120px; border-radius:8px; margin-bottom:0.5em;">
-        <figcaption style="color:var(--text-secondary); font-size:0.93em;">Learning through doing</figcaption>
-      </div>
-    </section>
-
-    <!-- RESOURCES & TECHNOLOGIES -->
-    <section class="card" style="display:flex; flex-wrap:wrap; gap:1.2em; align-items:center;">
-      <div style="flex:2; min-width:220px;">
-        <h2>Resources, Materials, and Digital Technologies</h2>
-        <ul>
-          <li><strong>Traditional:</strong> Crayons, watercolours, clay, natural materials (leaves, sand), textured paper, recycled objects.</li>
-          <li><strong>Digital:</strong> Tablets with drawing apps (<em>Tayasui Sketches</em>, <em>Doodle Buddy</em>), light tables, projectors for collaborative art.</li>
-          <li><strong>Creative documentation:</strong> Digital cameras for nature walks and photo collages.</li>
+  <!-- Top Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 mb-4">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">Creativity ECE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="art.html">Art</a></li>
+          <li class="nav-item"><a class="nav-link" href="drama-and-puppetry.html">Drama & Puppetry</a></li>
+          <li class="nav-item"><a class="nav-link" href="../references.html">References</a></li>
         </ul>
-        <p>
-          Saefurrohman (2024) advocates for a blend of traditional and digital tools to foster creative fluency. These resources empower children to explore line, colour, texture, and form—building both creative and technical literacy while reinforcing their capacity for storytelling through art.
-        </p>
       </div>
-      <div style="flex:1; min-width:140px; text-align:center;">
-        <img src="../img/art-materials.jpg" alt="Art materials" style="width:100%; max-width:120px; border-radius:8px; margin-bottom:0.5em;">
-        <figcaption style="color:var(--text-secondary); font-size:0.93em;">Tools for creative discovery</figcaption>
-      </div>
-    </section>
+    </div>
+  </nav>
 
-    <!-- CREATIVE LEARNING EXPERIENCES -->
-    <section class="card" style="background:rgba(20,184,166,0.07); border-left:4px solid var(--primary);">
-      <h2>Creative Learning Experiences in Art</h2>
-      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1.2em;">
-        <div>
-          <h3>🐣 Ages 0–2 Years</h3>
-          <ul>
-            <li><strong>Finger Painting with Natural Dyes:</strong> Infants explore texture and colour using safe, natural food-based paints. They engage sensory perception while building motor coordination. <span style="color:var(--text-secondary); font-size:0.95em;">(Inspired by Saefurrohman, 2024)</span></li>
-            <li><strong>Soft Sculpture Play:</strong> Using felt pieces, foam, and fabric scraps, infants stack, pull, and explore soft materials on Velcro boards. Supports early sensory and tactile exploration.</li>
-          </ul>
-        </div>
-        <div>
-          <h3>🐥 Ages 2–3 Years</h3>
-          <ul>
-            <li><strong>Sponge Stamping:</strong> Children use shaped sponges and stamp pads to explore patterns and shapes. Builds spatial awareness and creative confidence. <span style="color:var(--text-secondary); font-size:0.95em;">(Art Education, 2023)</span></li>
-            <li><strong>Mirror Drawing:</strong> Toddlers draw on mirrors with washable markers, observing their reflection as they create. Encourages self-awareness and symbolic thinking.</li>
-          </ul>
-        </div>
-        <div>
-          <h3>🧒 Ages 3–5 Years</h3>
-          <ul>
-            <li><strong>Nature Collage Creations:</strong> Children collect leaves, sticks, and flowers to assemble art pieces. Encourages eco-awareness and open-ended creativity. <span style="color:var(--text-secondary); font-size:0.95em;">(Saefurrohman, 2024)</span></li>
-            <li><strong>Storytelling Through Clay:</strong> Using modelling clay, children sculpt characters or scenes from a favourite story. Merges literacy with visual arts and supports narrative expression.</li>
-          </ul>
-        </div>
-        <div>
-          <h3>🧑 Ages 6–8 Years</h3>
-          <ul>
-            <li><strong>Digital Mural Collaboration:</strong> Using a drawing app or tablet, children contribute digital illustrations to a shared mural. Promotes teamwork and integrates technology with art-making.</li>
-            <li><strong>Cultural Pattern Design:</strong> Children explore patterns from different cultures (e.g., Maasai beadwork, Aboriginal dot art), then create their own using paint or markers. Encourages cultural appreciation and creative reinterpretation. <span style="color:var(--text-secondary); font-size:0.95em;">(Art Education, 2023)</span></li>
-          </ul>
+  <!-- Hero Section -->
+  <section class="hero-section container mb-5">
+    <div class="row align-items-center">
+      <div class="col-lg-7 text-lg-start text-center">
+        <h1>Art in Early Childhood</h1>
+        <p>Art is a language for children—one that nurtures imagination, communication, and self-discovery. Explore how art unlocks creativity and confidence in the early years.</p>
+        <a href="../index.html" class="btn btn-main">&#8592; Back to Home</a>
+      </div>
+      <div class="col-lg-5 text-center mt-4 mt-lg-0">
+        <img src="../img/art-hero.jpg" alt="Children painting together" class="img-fluid rounded-4 shadow" style="max-width:240px;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Art Content Section -->
+  <section class="container mb-5">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card p-4 h-100">
+          <h5 class="card-title" style="color:#6c63ff; font-weight:700;">Significance of Artistic Creativity</h5>
+          <p class="card-text">Art is a great medium for building creativity in early childhood, allowing children to express unique ideas. Alghufali (2024) illustrates that painting and sculpting enhance creative thinking, critical for ages 0-8. This subject area converts imaginative thoughts into reality, boosting confidence levels and emotional growth. For instructors, art gives a glimpse into a child's mind, expressing their perspective through color and shape. Adding art ensures creativity is not overlooked, hence an essential teaching device to prepare young learners for creative thinking.</p>
         </div>
       </div>
-    </section>
+      <div class="col-md-6">
+        <div class="card p-4 h-100">
+          <h5 class="card-title" style="color:#f8b500; font-weight:700;">Creativity Theories and Perceptions</h5>
+          <p class="card-text">Theories like Gardner's multiple intelligences theory hypothesize art activates spatial and interpersonal skills. Alghufali (2024) agrees with this, identifying art activities activate divergent thinking among young children. Perceptions vary—some view art as inborn expression, others as learned skill developed through guidance. Leggett (2024) documents Australian and Italian teachers set down imaginative processes, demonstrating how the cultural atmosphere impacts art studies. Such an integration of theory and practice underscores the need for flexible instruction in line with each child's stage of development from infancy through age 8.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-4 h-100">
+          <h5 class="card-title" style="color:#6c63ff; font-weight:700;">Resources, Materials, and Digital Technologies</h5>
+          <p class="card-text">Art thrives with the right tools. Media like clay, recycled paper, and watercolors inspire children of any age. 0-2-year-olds utilize finger paint with safe materials to promote sensory play. 2-3-year-olds engage in collage sets with textured cut-outs, and 3-5-year-olds utilize sketchbooks for guided drawing. Drawing programs on digital tablets increase creativity by 6-8 years. Projectors that project artwork are technologies employed, but overuse can constrain hands-on skills. Educators must offer appropriate combinations of traditional and electronic resources with accessibility and safety to provide artistic discovery.</p>
+          <img src="../img/art-materials.jpg" alt="Art materials for children" class="img-fluid rounded shadow mt-3" style="max-height:180px; object-fit:cover; width:100%;"/>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-4 h-100">
+          <h5 class="card-title" style="color:#f8b500; font-weight:700;">Learning Experiences/Opportunities</h5>
+          <ul class="list-group list-group-flush mb-3">
+            <li class="list-group-item bg-transparent">0-2 Years: Finger painting with food coloring enhances sensory sharpness (Alghufali, 2024).</li>
+            <li class="list-group-item bg-transparent">0-2 Years: Rubbing texture with soft objects encourages curiosity (Leggett, 2024).</li>
+            <li class="list-group-item bg-transparent">2-3 Years: Collage with fabric pieces encourages imagination (Alghufali, 2024).</li>
+            <li class="list-group-item bg-transparent">2-3 Years: Drawing with crayons encourages freedom of expression (Leggett, 2024).</li>
+            <li class="list-group-item bg-transparent">3-5 Years: Guided clay modeling reinforces fine motor skills (Alghufali, 2024).</li>
+            <li class="list-group-item bg-transparent">3-5 Years: Tablet painting boosts imagination (Leggett, 2024).</li>
+            <li class="list-group-item bg-transparent">6-8 Years: Mixed-media activity boosts innovation (Alghufali, 2024).</li>
+            <li class="list-group-item bg-transparent">6-8 Years: Group mural painting promotes cooperation (Leggett, 2024).</li>
+          </ul>
+          <p class="mt-2">These sessions, backed by research, point towards how art teachers can facilitate creative development in all ages.</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <a href="drama-and-puppetry.html" class="btn btn-main">Next: Drama & Puppetry &rarr;</a>
+    </div>
+  </section>
 
-    <!-- NAVIGATION -->
-    <nav class="bottom-nav" style="margin-top:1.5rem;">
-      <a href="../index.html">Home</a>
-      <a href="drama-and-puppetry.html">Next: Drama & Puppetry &rarr;</a>
-      <a href="../references.html">References</a>
-    </nav>
-  </main>
-  <script>
-    // Smart sidebar toggle for mobile/tablet
-    const sidebar = document.querySelector('.sidebar');
-    const toggleBtn = document.querySelector('.sidebar-toggle');
-    const closeBtn = document.querySelector('.sidebar-close');
-    const overlay = document.querySelector('.sidebar-overlay');
-    const navLinks = document.querySelectorAll('.sidebar .nav a');
-    const focusableSelectors = 'a, button, input, [tabindex]:not([tabindex="-1"])';
-    let lastFocused;
-
-    function openSidebar() {
-        sidebar.classList.add('active');
-        overlay.classList.add('active');
-        document.body.classList.add('sidebar-locked');
-        lastFocused = document.activeElement;
-        // Focus trap
-        setTimeout(() => {
-            const first = sidebar.querySelector(focusableSelectors);
-            if (first) first.focus();
-        }, 100);
-    }
-    function closeSidebar() {
-        sidebar.classList.remove('active');
-        overlay.classList.remove('active');
-        document.body.classList.remove('sidebar-locked');
-        if (lastFocused) lastFocused.focus();
-    }
-    toggleBtn.addEventListener('click', () => {
-        if (sidebar.classList.contains('active')) {
-            closeSidebar();
-        } else {
-            openSidebar();
-        }
-    });
-    closeBtn.addEventListener('click', closeSidebar);
-    overlay.addEventListener('click', closeSidebar);
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            if (window.innerWidth <= 1024) closeSidebar();
-        });
-    });
-    window.addEventListener('resize', () => {
-        if (window.innerWidth > 1024) closeSidebar();
-    });
-    document.addEventListener('keydown', (e) => {
-        if (sidebar.classList.contains('active')) {
-            if (e.key === 'Escape') closeSidebar();
-            // Focus trap
-            if (e.key === 'Tab') {
-                const focusables = sidebar.querySelectorAll(focusableSelectors);
-                if (!focusables.length) return;
-                const first = focusables[0];
-                const last = focusables[focusables.length - 1];
-                if (e.shiftKey) {
-                    if (document.activeElement === first) {
-                        e.preventDefault();
-                        last.focus();
-                    }
-                } else {
-                    if (document.activeElement === last) {
-                        e.preventDefault();
-                        first.focus();
-                    }
-                }
-            }
-        }
-    });
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
